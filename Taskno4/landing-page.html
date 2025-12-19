@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0% auto;
+            overflow: hidden;
+        }
+
+        .hero-section {
+            width: 1440px;
+            height: 837px;
+            opacity: 1;
+            background: #D7F5DC;
+
+        }
+
+        header {
+            width: 1440;
+            height: 80;
+            justify-content: space-between;
+            opacity: 1;
+            padding-block: 5px;
+            padding-inline: 100px;
+        }
+
+        nav {
+            width: 1440;
+            height: 80;
+            display: flex;
+            justify-content: space-between;
+            opacity: 1;
+            padding-block: 5px;
+            padding-inline: 48px;
+
+
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            align-items: right;
+            justify-content: end;
+            margin-top: 25px;
+            width: 639;
+            height: 44;
+            opacity: 1;
+            gap: 20px;
+
+        }
+
+        #li-item {
+            display: flex;
+            width: 639px;
+            height: 44px;
+            opacity: 1;
+            gap: 30px;
+
+        }
+
+        #login {
+            width: 93px;
+            height: 44px;
+            opacity: 1;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #20B15A;
+            background-color: #D7F5DC;
+            color: black;
+            font-weight: 500;
+            /* font-style: med; */
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+
+        #reg {
+            width: 105px;
+            height: 44px;
+
+            opacity: 1;
+            gap: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #20B15A;
+            border: none;
+            font-family: Poppins;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: white;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+
+        .sub-hero-section {
+            display: flex;
+            margin-left: 150px;
+        }
+
+        #hero-left {
+            width: 550px;
+            height: 366px;
+            opacity: 1;
+            /* top: 237px; */
+            /* margin-left: 10px; */
+            gap: 37px;
+            margin-top: 100px;
+        }
+
+        #started-btn {
+            width: 175;
+            height: 70;
+            opacity: 1;
+            padding-inline: 30px;
+            padding-block: 20px;
+            gap: 10px;
+            border: none;
+            border-radius: 16px;
+            background-color: #20B15A;
+            width: 115;
+            height: 30;
+            opacity: 1;
+            font-weight: 500px;
+            font-style: Medium;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            margin-bottom: 37pxpx;
+
+
+        }
+
+        #hero-right {
+            /* width: 50%; */
+            margin-bottom: 20px;
+        }
+
+        .sub2-hero-section {
+            width: 1440;
+            height: 120;
+            opacity: 1;
+            top: 683px;
+
+        }
+
+        .section-2 {
+            width: 1440;
+            height: 800;
+            opacity: 1;
+            margin-top: 50px;
+            margin-left: 60px;
+        }
+
+        #sub-section-2 {
+            display: flex;
+            width: 1230px;
+            height: 415px;
+            opacity: 1;
+            gap: 45px;
+
+        }
+
+        .section-2-first {
+            width: 380px;
+            height: 415px;
+            opacity: 1;
+            gap: 43px;
+            border-radius: 30px;
+            padding-top: 50px;
+            padding-inline: 30px;
+            padding-bottom: 50px;
+        }
+
+        .logo {
+            width: 93.33332824707031px;
+            height: 93.33332824707031px;
+            opacity: 1;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            align-self: flex-start
+        }
+
+        .section-2-h2 {
+            width: 240px;
+            height: 36px;
+            opacity: 1;
+            font-family: Poppins;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0%;
+
+        }
+
+        .section-2-p {
+            width: 299px;
+            height: 50px;
+            opacity: 1;
+            font-family: Avenir;
+            font-weight: 400;
+            font-style: Roman;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+
+        .section-2-btn {
+            width: 159px;
+            height: 55px;
+            opacity: 1;
+            gap: 10px;
+            border-radius: 10px;
+            padding-block: 15px;
+            padding-inline: 20px;
+            border: none;
+            background-color: #FFFFFF;
+            font-family: Avenir;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0%;
+
+
+        }
+
+        .section-3 {
+            width: 1440px;
+            /* height: 800;  */
+            opacity: 1;
+            top: 837px;
+            background-color: #FAFFFB;
+            margin-left: 30px;
+        }
+
+        .section-3-img1 {
+            width: 240px;
+            height: 259px;
+            opacity: 1;
+            gap: 15px;
+            border-right-width: 1px;
+            padding: 40px;
+            align-items: center;
+            margin-left: 100px;
+        }
+
+        .section-3-img2 {
+            width: 260px;
+            height: 259px;
+            opacity: 1;
+            gap: 15px;
+            border-right-width: 1px;
+            padding: 40px;
+            align-items: center;
+        }
+
+        .section-3-img3 {
+            width: 219px;
+            height: 259px;
+            opacity: 1;
+            gap: 15px;
+            border-right-width: 1px;
+            padding: 40px;
+        }
+
+        .section-3-img4 {
+            width: 219px;
+            height: 259px;
+            opacity: 1;
+            gap: 15px;
+            padding: 40px;
+
+        }
+
+        .portfolio-section {
+            display: flex;
+            width: 1440;
+            height: 1626;
+            opacity: 1;
+            margin-top: 40px;
+            margin-left: 20px;
+
+        }
+
+        #portfolio-2 {
+            margin-left: 50px;
+        }
+
+
+        .testimonial-text {
+            width: 350px;
+            height: 100px;
+            opacity: 1;
+            font-family: Avenir;
+            font-weight: 400px;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0%;
+
+        }
+
+        .profile {
+            display: flex;
+            margin-top: 10px;
+
+        }
+
+        .profile-info {
+            margin-top: 15px;
+        }
+
+        .testimonial-section {
+            margin-top: 20px;
+            width: 1200px;
+            height: 400px;
+        }
+
+        .testimonial-card {
+            width: 400px;
+            height: 240px;
+            opacity: 1;
+            gap: 20px;
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgb(209, 204, 204);
+            border-radius: 20px;
+            box-shadow: 50px;
+
+        }
+
+        .testimonial-cards {
+            display: flex;
+            gap: 10px;
+        }
+
+        .subscribe-box {
+            width: 1440px;
+            height: 320px;
+            margin-left: 400px;
+            margin-top: 80px;
+            display: inline-block;
+
+
+        }
+
+        .tag {
+            color: #3cb371;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-right: 1100px;
+        }
+
+        .subscribe-box h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .desc {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            width: 596px;
+            
+        }
+
+        .input-group input {
+            width: 65%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 25px 0 0 25px;
+            outline: none;
+        }
+
+        .input-group button {
+            padding: 12px 25px;
+            border: none;
+            background: #ff7a18;
+            color: white;
+            font-weight: bold;
+            border-radius: 0 25px 25px 0;
+            margin-right: 80px;
+
+        }
+
+
+        .footer {
+            background-color: #20B15A;
+            width: 1440px;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 90px;
+            padding-right: 180px;
+            
+        }
+        .footer-first{
+            width: 400px;
+            gap: 50px;
+        }
+        .footer-second{
+            list-style: none;
+            width: 200px;
+        }
+        ol{
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <header>
+                <nav>
+                    <img src="logo (2).png" alt="logo" width="176px" height="80px">
+
+                    <div id="li-item">
+                        <ul>
+                            <li>Services</li>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+
+                        </ul>
+                        <button id="login" style="margin-top: 10px;">Login</button>
+                        <button id="reg" style="margin-top: 10px;">Register</button>
+                    </div>
+
+                </nav>
+            </header>
+
+
+            <div class="sub-hero-section">
+                <div id="hero-left">
+                    <h1
+                        style=" font-weight: 700px; font-style: Bold; font-size: 50px; line-height: 65px; letter-spacing: 0%; width: 550; height: 195; opacity: 1; margin-bottom: 10px;">
+                        Increase Your <br>Customers Loyalty <br> and Satisfaction</h1>
+                    <p
+                        style="width: 472px; height: 54px; font-family: Avenir; font-weight: 500; font-style: Medium; font-size: 20px; line-height: 100%; letter-spacing: 0%; margin-bottom: 20px;">
+                        We help businesses like yours earn more customers, standout from competitors, make more money
+                    </p>
+                    <button id="started-btn">Get Started</button>
+                </div>
+                <div id="hero-right">
+                    <img src="./girl-img.png" alt="girl image" width="510px" height="420">
+                </div>
+            </div>
+            <div class="sub2-hero-section">
+                <img src="./Our Partners.png" alt="" width="1440px" height="100px" style="margin-top: 6%;">
+            </div>
+        </div>
+        <div class="section-2">
+            <p
+                style="width: 131px; height: 30px;opacity: 1; font-family: Poppins; font-weight: 500; font-style: Medium; font-size: 20px; line-height: 100%; letter-spacing: 0%; text-transform: uppercase; color: #20B15A;; ">
+                What we do</p>
+            <p
+                style="width: 495; height: 90; opacity: 1;  font-weight: 600; font-style: SemiBold; font-size: 30px; line-height: 100%; letter-spacing: 0%; margin-top: 15px;">
+                We provide the Perfect Solution <br> to your business growth</p>
+            <div id="sub-section-2">
+                <div class="section-2-first">
+                    <img class="logo" src="./Grow-Your-Business.png" alt="">
+                    <h2 class="section-2-h2">Grow Your Business</h2>
+                    <p class="section-2-p">We help identify the best ways to improve your business</p>
+                    <button class="section-2-btn">Learn More -></button>
+                </div>
+                <div class="section-2-first ">
+                    <img class="logo" src="./Heart.png" alt="" style="margin-right: 10%;">
+                    <h2 class="section-2-h2">Grow Your Business</h2>
+                    <p class="section-2-p">We help identify the best ways to improve your business</p>
+                    <button class="section-2-btn">Learn More -></button>
+                </div>
+                <div class="section-2-first ">
+                    <img class="logo" src="./Work.png" alt="">
+                    <h2 class="section-2-h2">Grow Your Business</h2>
+                    <p class="section-2-p">We help identify the best ways to improve your business</p>
+                    <button class="section-2-btn">Learn More -></button>
+                </div>
+            </div>
+        </div>
+        <div class="section-3">
+            <img class="section-3-img1" src="./section-3-img01.png" alt="">
+            <img class="section-3-img2" src="./section-3-img02.png" alt="">
+            <img class="section-3-img3" src="./section-3-img03.png" alt="">
+            <img class="section-3-img4" src="./section-3-img04.png" alt="">
+
+        </div>
+        <div class="portfolio-section">
+            <div id="portfolio-1">
+                <img src="./portfolio1.png" alt="" width="561px" height="340px">
+                <p
+                    style="width: 394px; height: 34px; opacity: 1; font-weight: 600px; font-style: Bold; font-size: 22.82px; line-height: 100%; letter-spacing: 0%; margin-top: 30px; ">
+                    Digital Marketing Agency Website</p>
+                <p
+                    style="width: 533.425415039062px; height: 63px; opacity: 1; font-family: Avenir; font-weight: 400px; font-style: Book; font-size: 15.21px;  line-height: 100%; letter-spacing: 0%; margin-top: 20px;">
+                    This is a website for a client who want to achieve their goals and meet their users needs while also
+                    increasing their reach. Accross all platforms. This is a website rebrand</p>
+                <img src="./portfolio2.png" alt="" width="561" height="522" style="margin-top: 40px;">
+                <p
+                    style="width: 394px; height: 34px; opacity: 1; font-family: Poppins;font-weight: 600px; font-style:SemiBold; font-size: 22.82px; line-height: 100%; letter-spacing: 0%; margin-top: 30px;">
+                    Digital Marketing Agency Website</p>
+                <p
+                    style="width: 533.4254150390625px; height: 63px; opacity: 1; font-family: Avenir; font-weight: 400px; font-style: Book; font-size: 15.21px;  line-height: 100%; letter-spacing: 0%; margin-top: 20px;">
+                    This is a website for a client who want to achieve their goals and meet their users needs while also
+                    increasing their reach. Accross all platforms. This is a website rebrand</p>
+            </div>
+            <div id="portfolio-2">
+                <img src="./portfolio3.png" alt="" width="561px" height="521px">
+                <p
+                    style="width: 394px; height: 34px; opacity: 1; font-weight: 600px; font-style:SemiBold; font-size: 22.82px; line-height: 100%; letter-spacing: 0%; margin-top: 30px; ">
+                    Digital Marketing Agency Website</p>
+                <p
+                    style="width: 533.425415039062px; height: 63px; opacity: 1; font-family: Avenir; font-weight: 400px; font-style: Book; font-size: 15.21px;  line-height: 100%; letter-spacing: 0%; margin-top: 20px;">
+                    This is a website for a client who want to achieve their goals and meet their users needs while also
+                    increasing their reach. Accross all platforms. This is a website rebrand</p>
+                <img src="./portfolio4.png" alt="" width="504" height="338" style="margin-top: 40px;">
+                <p
+                    style="width: 394px; height: 34px; opacity: 1; font-family: Poppins;font-weight: 600px; font-style:SemiBold; font-size: 22.82px; line-height: 100%; letter-spacing: 0%; margin-top: 30px;">
+                    Digital Marketing Agency Website</p>
+                <p
+                    style="width: 533.4254150390625px; height: 63px; opacity: 1; font-family: Avenir; font-weight: 400px; font-style: Book; font-size: 15.21px;  line-height: 100%; letter-spacing: 0%; margin-top: 20px;">
+                    This is a website for a client who want to achieve their goals and meet their users needs while also
+                    increasing their reach. Accross all platforms. This is a website rebrand</p>
+            </div>
+        </div>
+        <div class="testimonial-section">
+            <p
+                style=" color: #20B15A;  width: 139px; height: 30px; opacity: 1; font-family: Poppins; font-weight: 500px; font-style: Medium; font-size: 20px; line-height: 100%; letter-spacing: 0%; text-transform: uppercase; margin-left: 20px; ">
+                TESTIMONIALS</p>
+            <p
+                style="width: 495px; height: 90px; opacity: 1;  font-weight: 600px; font-style: SemiBold; font-size: 30px;  line-height: 100%; letter-spacing: 0%; text-transform: capitalize; margin-left: 20px; ">
+                See what our customer <br> say about us</p>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        Thank You for your service. I am very pleased with the result.
+                        I have seen exponential growth in my business and its all thanks
+                        to your amazing service
+                    </p>
+
+                    <div class="profile">
+                        <img src="./girl.avif" alt="Emily Stones" width="60px" height="60px"
+                            style="border-radius: 100%;">
+                        <div class="profile-info">
+                            <h4><b>Emily Stones</b></h4>
+                            <span>CEO, Marketing Guru</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        Thank You for your service. I am very pleased with the result.
+                        I have seen exponential growth in my business and its all thanks
+                        to your amazing service
+                    </p>
+
+                    <div class="profile">
+                        <img src="./girl.avif" alt="Emily Stones" width="60px" height="60px"
+                            style="border-radius: 100%;">
+                        <div class="profile-info">
+                            <h4><b>Emily Stones</b></h4>
+                            <span>CEO, Marketing Guru</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        Thank You for your service. I am very pleased with the result.
+                        I have seen exponential growth in my business and its all thanks
+                        to your amazing service
+                    </p>
+
+                    <div class="profile">
+                        <img src="./girl.avif" alt="Emily Stones" width="60px" height="60px"
+                            style="border-radius: 100%;">
+                        <div class="profile-info">
+                            <h4><b>Emily Stones</b></h4>
+                            <span>CEO, Marketing Guru</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="subscribe-box">
+            <p class="tag">SUBSCRIBE</p>
+            <h2 style="text-align: center; margin-right: 1100px;">Subscribe To Get The Latest <br> News About Us</h2>
+            <p class="desc">
+                Please Drop Your Email Below To Get Daily Updates About What We Do
+            </p>
+
+            <div class="input-group">
+                <input type="email" placeholder="Enter Your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-first">
+                <p>WEB LOGO</p>
+                <p>Some footer text about the Agency. Just a little description to help people understand you better</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="footer-second">
+                <ol>
+                    <li><b>Quick Links</b></li>
+                    <li>Services</li>
+                    <li>Portfolio</li>
+                    <li>About Us </li>
+                    <li>Contact Us</li>
+                </ol>
+            </div>
+            <div class="footer-third">
+                <p><b>Address</b></p>
+                <p>Design Agency Head Office. <br>Airport Road <br>United Arab Emirate</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
