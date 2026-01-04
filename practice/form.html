@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .container {
+        width: 60%;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: 1fr 450px;
+       background-color: whitesmoke;
+        padding-left: 30px;
+       
+    }
+
+    .row {
+        display: flex;
+        gap: 10px;
+    }
+
+    .form section {
+       /* margin-left: 20px; */
+        display: grid;
+        grid-template-columns: auto auto;
+        /* text-align: center; */
+       
+        
+       
+    }
+    input{
+        padding: 10px;
+    }
+    .btn{
+        background-color: green;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        padding: 15px;
+
+    }
+    .btn:hover{
+        cursor: pointer;
+        background-color: brown;
+    }
+    input[type=text]{
+        border: solid 2px black;
+
+    }
+     input[type=email]{
+        border: solid 2px black;
+
+    }
+    
+    
+
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="form-section">
+            <h2>Get in touch with us</h2>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>FULL NAME</label><br>
+                    <input type="text" placeholder="Name">
+                </div>
+
+                <div class="input-group">
+                    <label>EMAIL ADDRESS</label><br>
+                    <input type="email" placeholder="Email"><br><br>
+                </div>
+            </div>
+
+            <div class="input-group full">
+                <label>SUBJECT</label><br>
+                <input type="text" placeholder="Subject"><br><br>
+            </div>
+
+            <div class="input-group full">
+                <label>MESSAGE</label><br>
+                <textarea placeholder="Message" style="height: 120px; width: 200px; border: solid 2px black;"></textarea><br><br>
+            </div>
+
+            <button class="btn">Send Message</button>
+        </div>
+
+        <div class="image-section">
+            <img src="./pic.JPG" alt="image" width="460px">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
